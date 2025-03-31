@@ -614,7 +614,9 @@ fig_internet = criar_grafico_horizontal(
 # ================================
 # LAYOUT PRINCIPAL COM ABAS
 # ================================
+
 app = Dash(__name__, external_stylesheets=[dbc.themes.DARKLY, dbc.icons.FONT_AWESOME])
+server = app.server  # Necessário para o deploy no Heroku
 app.layout = dbc.Container([
     dbc.Tabs([
         # Aba Principal Existente
