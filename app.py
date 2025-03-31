@@ -1,6 +1,3 @@
-
-import pyodbc
-
 import dash
 from dash import dcc, html, Dash, Input, Output, dash_table
 from dash.dependencies import Input, Output
